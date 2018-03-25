@@ -1,6 +1,7 @@
 ## React Joystick
 
 [![NPM](https://nodei.co/npm/react-joystick.png)](https://nodei.co/npm/react-joystick/)
+[![Build Status](https://travis-ci.org/yodahuang/react_joystick.svg?branch=master)](https://travis-ci.org/yodahuang/react_joystick)
 
 This is a React components for rendering a joystick. It's a wrapper for [nipple.js](https://yoannmoinet.github.io/nipplejs/)
 

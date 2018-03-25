@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: yord.huang@gmail.com
+  api_key:
+    secure: jOg6DAGffrqanDvQi2harMzv7+hqLqMRYtbDShj+SW78CLWYfY+52EXwLkHBk4Hts4QnJJoo7JpZKikuJC6Ev4+oni2eX597ugptwD/DooEdIQyXml/vm156ffQ4SOvp695XFK5EkSZDk0vbWJSw4OSmzXx4BHQjEhUKXbMacrhXUw1DIJkHOSxgg28ehUuDBblhRTruJyMicPd8wzNK6OTReoL+EiyjB3yvq4l/mbdcRtZEHnfdhgJlY0nlv1jkHL4FVUDHRofipgk8rRRz21ErT7iJ2RIcfKUvgQLJVTjyfsH1Uvham9ScLOrNvShlWhqatYEIVa8LJDCUm++6sA4gZcsF+gO9dIIl5958cuNUuFun44QZKUtshKbeMjZCM96Zso69tIH23CcOh9ts7OV/qpPSWcHHWuj1qFMaX52hYP+HK6+qB2Q8aHkE2F/uHBBvnnmQJO/yfsQlrtlEtRvhAIcoY9iPMeLU8odCGck7+GdMpO66U7u1efekJ7M+eab11ywEY6i40QF5r9mvLyrj6xo/nWS8gJTGoomtdAPsl2Jxu+qdMNdu1tKeOu80JZvzuBzS/F3yad5ADCNv93UqscYQzWewlKCnfD+r1y1W+rXxJZfO7HlUuOOuuCJAsGhEtT6mFUUAZrLFE6TC+PMtvGopC0Zv3gVvZ3655OI=
+  on:
+    tags: true
+    repo: yodahuang/react_joystick
