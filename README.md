@@ -14,6 +14,20 @@ This is a React components for rendering a joystick. It's a wrapper for [nipple.
 
 ```javascript
 import Joystick from react-joystick
+
+const joyOptions = {
+    mode: 'semi',
+    catchDistance: 150,
+    color: 'white'
+}
+
+const divStyle = {
+    position: 'relative',
+    height: '350px',
+    width: '100%',
+    background: 'linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)' /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 class JoyWrapper extends Component {
     constructor() {
         super();
