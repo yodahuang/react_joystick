@@ -1,6 +1,6 @@
 {
   "name": "react-joystick",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React component for joystick",
   "main": "lib/index.js",
   "scripts": {
