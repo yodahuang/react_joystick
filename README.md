@@ -7,9 +7,9 @@ This is a React components for rendering a joystick. It's a wrapper for [nipple.
 
 ### Properties
 
-- `joyOptions`: Options for creating `nipplejs` joysticks
-- `divStyle`: the style for the `div` component containing joystick
-- `managerFn`: the function callback that will have `manager` as a parameter so that you can control the behaviour of joystick
+- `options`: Options for creating `nipplejs` joysticks
+- `containerStyle`: the style for the `div` component containing joystick
+- `managerListener`: the function callback that will have `manager` as a parameter so that you can control the behaviour of joystick
 
 ### Example
 
@@ -22,20 +22,21 @@ const joyOptions = {
     color: 'white'
 }
 
-const divStyle = {
+const containerStyle = {
     position: 'relative',
     height: '350px',
     width: '100%',
-    background: 'linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)' /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: 'linear-gradient(to right, #E684AE, #79CBCA, #77A1D3)'
 }
+
 
 class JoyWrapper extends Component {
     constructor() {
         super();
-        this.managerFn = this.managerFn.bind(this);
+        this.managerListener = this.managerListener.bind(this);
     }
 
-    managerFn(manager) {
+    managerListener(manager) {
         manager.on('move', (e, stick) => {
             console.log('I moved!')
         })
@@ -47,9 +48,9 @@ class JoyWrapper extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Paper elevation={4}>
-                <JoyStick joyOptions={joyOptions} divStyle={divStyle} managerFn={this.managerFn} />
-            </Paper>
+            <div>
+                <JoyStick joyOptions={joyOptions} containerStyle={containerStyle} managerListener={this.managerListener} />
+            </div>
         )
     }
 }
