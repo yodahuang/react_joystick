@@ -2,7 +2,7 @@
   "name": "react-joystick",
   "version": "0.2.0",
   "description": "A React component for joystick",
-  "main": "build/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "webpack -p",
     "start": "webpack --watch",
@@ -36,8 +36,9 @@
     "file-loader": "^1.1.11",
     "nipplejs": "^0.6.8",
     "prop-types": "^15.6.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
+    "react-scripts": "^1.1.4",
     "style-loader": "^0.20.3",
     "webpack": "^4.2.0"
   },

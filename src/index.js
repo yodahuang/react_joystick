@@ -9,11 +9,9 @@ class JoyStick extends Component {
   }
 
   componentDidMount() {
-    console.log(this.joyRef);
     this.manager = nipplejs.create({ ...this.props.options, zone: this.joyRef.current });
     this.props.managerListener(this.manager);
   }
-
 
   render() {
     return (
