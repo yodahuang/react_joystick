@@ -49,7 +49,7 @@ class JoyWrapper extends Component {
         const { classes } = this.props;
         return (
             <div>
-                <JoyStick joyOptions={joyOptions} containerStyle={containerStyle} managerListener={this.managerListener} />
+                <JoyStick options={joyOptions} containerStyle={containerStyle} managerListener={this.managerListener} />
             </div>
         )
     }
